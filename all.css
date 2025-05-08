@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 html,
 body,
 div,
@@ -134,44 +135,45 @@ table {
 }
 
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Noto Sans", Courier, monospace;
 }
 
-body {
+body .blog {
+  max-width: 1920px;
   margin: 0 auto;
-  width: 1200px;
 }
-body ul {
+body .blog ul {
   margin: 10px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
-body li {
+body .blog ul li {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  width: 360px;
+  margin: 20px;
+  width: 400px;
 }
-body li img {
+body .blog ul li img {
   width: 100%;
 }
-body li time {
+body .blog ul li time {
   font-size: 14px;
   font-weight: 700;
   padding: 10px 10px 5px 10px;
 }
-body li .tag {
+body .blog ul li .tag {
   display: flex;
   flex-direction: row;
 }
-body li .tag a {
+body .blog ul li .tag a {
   color: #0027d5;
   font-size: 18px;
   font-weight: 700;
   padding: 10px 0px 5px 10px;
   text-decoration: none;
 }
-body li .tag .hot {
+body .blog ul li .tag .hot {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,20 +189,20 @@ body li .tag .hot {
   border-radius: 999px;
   text-decoration: none;
 }
-body li h1 {
-  font-size: 20px;
+body .blog ul li h1 {
+  font-size: 22px;
   padding: 5px 10px 5px 10px;
   font-weight: 700;
   line-height: 1.5;
 }
-body li p {
+body .blog ul li p {
   font-size: 13px;
   padding: 5px 10px 5px 10px;
   line-height: 1.5;
   color: #4b4b4b;
   font-weight: 600;
 }
-body .link {
+body .blog ul li .link {
   display: block;
   padding: 6px 4px;
   background-color: #fff;
